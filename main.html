@@ -1,0 +1,395 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <meta name="author" content="Manaswini Mandal" />
+  <meta name="dcterms.date" content="2026-06-13" />
+  <title>The Hitchhiker’s Guide to Quantum Mechanics</title>
+  <style>
+    /* Default styles provided by pandoc.
+    ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
+    */
+    html {
+      color: #1a1a1a;
+      background-color: #fdfdfd;
+    }
+    body {
+      margin: 0 auto;
+      max-width: 36em;
+      padding-left: 50px;
+      padding-right: 50px;
+      padding-top: 50px;
+      padding-bottom: 50px;
+      hyphens: auto;
+      overflow-wrap: break-word;
+      text-rendering: optimizeLegibility;
+      font-kerning: normal;
+    }
+    @media (max-width: 600px) {
+      body {
+        font-size: 0.9em;
+        padding: 12px;
+      }
+      h1 {
+        font-size: 1.8em;
+      }
+    }
+    @media print {
+      html {
+        background-color: white;
+      }
+      body {
+        background-color: transparent;
+        color: black;
+        font-size: 12pt;
+      }
+      p, h2, h3 {
+        orphans: 3;
+        widows: 3;
+      }
+      h2, h3, h4 {
+        page-break-after: avoid;
+      }
+    }
+    p {
+      margin: 1em 0;
+    }
+    a {
+      color: #1a1a1a;
+    }
+    a:visited {
+      color: #1a1a1a;
+    }
+    img {
+      max-width: 100%;
+    }
+    svg {
+      height: auto;
+      max-width: 100%;
+    }
+    h1, h2, h3, h4, h5, h6 {
+      margin-top: 1.4em;
+    }
+    h5, h6 {
+      font-size: 1em;
+      font-style: italic;
+    }
+    h6 {
+      font-weight: normal;
+    }
+    ol, ul {
+      padding-left: 1.7em;
+      margin-top: 1em;
+    }
+    li > ol, li > ul {
+      margin-top: 0;
+    }
+    blockquote {
+      margin: 1em 0 1em 1.7em;
+      padding-left: 1em;
+      border-left: 2px solid #e6e6e6;
+      color: #606060;
+    }
+    code {
+      font-family: Menlo, Monaco, Consolas, 'Lucida Console', monospace;
+      font-size: 85%;
+      margin: 0;
+      hyphens: manual;
+    }
+    pre {
+      margin: 1em 0;
+      overflow: auto;
+    }
+    pre code {
+      padding: 0;
+      overflow: visible;
+      overflow-wrap: normal;
+    }
+    .sourceCode {
+     background-color: transparent;
+     overflow: visible;
+    }
+    hr {
+      border: none;
+      border-top: 1px solid #1a1a1a;
+      height: 1px;
+      margin: 1em 0;
+    }
+    table {
+      margin: 1em 0;
+      border-collapse: collapse;
+      width: 100%;
+      overflow-x: auto;
+      display: block;
+      font-variant-numeric: lining-nums tabular-nums;
+    }
+    table caption {
+      margin-bottom: 0.75em;
+    }
+    tbody {
+      margin-top: 0.5em;
+      border-top: 1px solid #1a1a1a;
+      border-bottom: 1px solid #1a1a1a;
+    }
+    th {
+      border-top: 1px solid #1a1a1a;
+      padding: 0.25em 0.5em 0.25em 0.5em;
+    }
+    td {
+      padding: 0.125em 0.5em 0.25em 0.5em;
+    }
+    header {
+      margin-bottom: 4em;
+      text-align: center;
+    }
+    #TOC li {
+      list-style: none;
+    }
+    #TOC ul {
+      padding-left: 1.3em;
+    }
+    #TOC > ul {
+      padding-left: 0;
+    }
+    #TOC a:not(:hover) {
+      text-decoration: none;
+    }
+    code{white-space: pre-wrap;}
+    span.smallcaps{font-variant: small-caps;}
+    div.columns{display: flex; gap: min(4vw, 1.5em);}
+    div.column{flex: auto; overflow-x: auto;}
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+    /* The extra [class] is a hack that increases specificity enough to
+       override a similar rule in reveal.js */
+    ul.task-list[class]{list-style: none;}
+    ul.task-list li input[type="checkbox"] {
+      font-size: inherit;
+      width: 0.8em;
+      margin: 0 0.8em 0.2em -1.6em;
+      vertical-align: middle;
+    }
+    .display.math{display: block; text-align: center; margin: 0.5rem auto;}
+  </style>
+</head>
+<body>
+<header id="title-block-header">
+<h1 class="title"><strong>The Hitchhiker’s Guide to Quantum
+Mechanics</strong></h1>
+<p class="author"><strong>Manaswini Mandal</strong></p>
+<p class="date">2026-06-13</p>
+</header>
+<h1 id="introduction"><strong>Introduction</strong></h1>
+<p>Essentially, all of chemistry is a consequence of the laws of quantum
+mechanics. If chemistry is to be understood at the fundamental level of
+electrons, atoms, and molecules, quantum mechanics must be incorporated
+and internalized. Quantities such as the heat of combustion of octane,
+25 °C, the entropy of liquid water, the reaction rate of <span
+class="math inline"><em>N</em><sub>2</sub></span> and <span
+class="math inline"><em>H</em><sub>2</sub></span> gases under specified
+conditions, the equilibrium constants of chemical reactions, the
+absorption spectra of coordination compounds, the NMR spectra of organic
+compounds, the nature of the products when organic compounds react, the
+shape into which a protein molecule will fold when it is formed in a
+cell, the structure and function of DNA are all a consequence of quantum
+mechanics.</p>
+<p>In 1929, Dirac, one of the founders of quantum mechanics, wrote that
+"The general theory of quantum mechanics is now almost complete...the
+underlying physical laws necessary for the mathematical theory of...the
+whole of chemistry are thus completely known, and the difficulty is only
+that the exact applications of these laws lead to equations much too
+complicated to be soluble."</p>
+<p>After its discovery, quantum mechanics was used to develop many
+concepts that helped explain chemical properties. However, because of
+the highly difficult calculations needed to apply quantum mechanics to
+chemical systems, it was of little practical value in accurately
+calculating the properties of chemical systems for many years after its
+discovery. Nowadays, the extraordinary power of modern computation
+allows quantum-mechanical calculations to give accurate chemical
+predictions in many systems of real chemical interest.</p>
+<h2 id="wave-vs-particle"><strong>Wave vs Particle</strong></h2>
+<p>Two fundamental properties of waves are <strong>Interference</strong>
+and <strong>Diffraction</strong><br />
+whereas particles follow <strong>Newton’s Equation of
+Motion</strong>.</p>
+<p><strong>Scalar Wave Equation:</strong></p>
+<p><span class="math display">$$\begin{equation}
+    \frac{\partial^2 E}{\partial t^2} = c^2 \frac{\partial^2 E}{\partial
+t^2}
+\end{equation}$$</span> (1) is applicable to an electromagnetic
+wave.</p>
+<p>For an elementary wave, the change of change of anything with respect
+to time is proportional to the change of change of anything with respect
+to space.</p>
+<p><span class="math display">$$\begin{equation}
+    E = A \sin\left(\frac{2 \pi x}{\lambda} - 2 \pi \nu t\right)
+\end{equation}$$</span> let <span class="math inline">$\frac{2 \pi
+}{\lambda} = k$</span> and <span
+class="math inline">2<em>π</em><em>ν</em> = <em>ω</em></span>. Then, E =
+A sin(kx-<span class="math inline"><em>ω</em></span>t)</p>
+<p>Now, we calculate the second time derivative of (2) <span
+class="math display">$$\begin{align}
+    \frac{\partial E}{\partial t} &amp;= -\omega A \cos(kx - \omega t)
+\\
+    \frac{\partial^2 E}{\partial t^2} &amp;= -\omega^2 A \sin(kx -
+\omega t)
+\end{align}$$</span></p>
+<p>Similarly, calculating the second spatial derivative of (2) <span
+class="math display">$$\begin{align}
+    \frac{\partial E}{\partial x} &amp;= k A \cos(kx - \omega t) \\
+    \frac{\partial^2 E}{\partial x^2} &amp;= -k^2 A \sin(kx - \omega t)
+\end{align}$$</span></p>
+<p>Substituting Equation (4) and Equation (6) back into the wave
+equation (1) yields: <span
+class="math display">−<em>ω</em><sup>2</sup><em>A</em>sin (<em>k</em><em>x</em> − <em>ω</em><em>t</em>) = <em>c</em><sup>2</sup>(−<em>k</em><sup>2</sup><em>A</em>sin (<em>k</em><em>x</em> − <em>ω</em><em>t</em>))</span></p>
+<p>Dividing both sides by <span
+class="math inline">−<em>A</em>sin (<em>k</em><em>x</em> − <em>ω</em><em>t</em>)</span>
+simplifies the expression to: <span
+class="math display"><em>ω</em><sup>2</sup> = <em>c</em><sup>2</sup><em>k</em><sup>2</sup></span></p>
+<p>Taking the positive square root of both sides gives: <span
+class="math display"><em>ω</em> = <em>c</em><em>k</em></span></p>
+<p>Again, as shown previously, <span
+class="math display">$$\begin{equation}
+    \omega = 2\pi\nu, k = \frac{2\pi}{\lambda}
+\end{equation}$$</span></p>
+<p>Substituting these two relations into (9); <span
+class="math display">$$\begin{equation}
+    2\pi\nu = c \left( \frac{2\pi}{\lambda} \right)
+\end{equation}$$</span></p>
+<p>Dividing both sides by <span class="math inline">2<em>π</em></span>
+simplifies the equation to: <span
+class="math display">$$\begin{equation}
+    \nu = \frac{c}{\lambda}
+\end{equation}$$</span></p>
+<p>Multiplying both sides by <span class="math inline"><em>λ</em></span>
+gives the final relationship: <span
+class="math display"><em>c</em> = <em>λ</em><em>ν</em></span></p>
+<p>Hence proved.</p>
+<h1 id="limitations-of-classical-physics"><strong>Limitations of
+Classical Physics</strong></h1>
+<ul>
+<li><p><strong>The Dawn of a Crisis</strong>: At the turn of the
+twentieth century, the reliable frameworks of Newtonian mechanics and
+Maxwellian electrodynamics suddenly collapsed when applied to the atomic
+scale.</p></li>
+<li><p><strong>A Radical Leap</strong>: This breakdown forced physicists
+to abandon the assumption of continuous energy, replacing it with the
+groundbreaking concept of discrete energy packets known as
+"quanta."</p></li>
+<li><p><strong>The Empirical Trigger</strong>: This was not just a
+theoretical debate; it was driven by stark anomalies in the lab that
+classical physics simply could not reconcile.</p></li>
+<li><p><strong>The Quantum Turning Point</strong>: These systemic
+failures exposed the hard boundaries of the old world, leading to a
+series of historic experiments that birthed modern quantum
+mechanics.</p></li>
+</ul>
+<p>This theoretical collapse was forced by an unavoidable reality:
+experimental data flatly contradicted classical predictions. Laboratory
+anomalies transformed from minor quirks into insurmountable roadblocks
+for traditional physics, challenging long-held assumptions about light,
+matter, and atomic structure. The most devastating blows came from a
+handful of targeted investigations—specifically, the riddle of
+black-body radiation, the confounding mechanics of the photoelectric
+effect, and the unexplained line spectra of the hydrogen atom. Each of
+these pivotal experiments systematically exposed the limits of classical
+intuition, leaving physics with no choice but to rebuild its
+foundational rules from the ground up.</p>
+<h1
+id="experiments-that-classical-physics-could-not-explain"><strong>Experiments
+that Classical Physics could not explain</strong> </h1>
+<ol>
+<li><p>Blackbody Radiation</p></li>
+<li><p>Photoelectric effect</p></li>
+<li><p>Compton Scattering</p></li>
+<li><p>Stability of atoms and Atomic Spectra</p></li>
+<li><p>Heat Capacity of solids</p></li>
+<li><p>Pair Creation and Pair Annihilation</p></li>
+</ol>
+<h2 id="blackbody-radiation"><strong>Blackbody Radiation</strong></h2>
+<p>When a solid is heated, it emits light. Classical physics pictures
+light as a wave consisting of oscillating electric and magnetic fields,
+an electromagnetic wave. The frequency <span
+class="math inline"><em>ν</em></span> and wavelength <span
+class="math inline"><em>λ</em></span> of an electromagnetic wave
+traveling through vacuum are related by</p>
+<p><span class="math display">$$\begin{align}
+    \lambda \nu &amp;= c
+\end{align}$$</span></p>
+<p>where <span class="math inline"><em>c</em> = 3.0 × 10<sup>8</sup>
+m/s</span> is the speed of light in vacuum. While human vision is
+sensitive to frequencies between <span
+class="math inline">4 × 10<sup>14</sup></span> and <span
+class="math inline">7 × 10<sup>14</sup></span> Hz, electromagnetic
+radiation covers a broader spectrum. The term "light" is used here to
+refer to all electromagnetic radiation, not just visible light.</p>
+<p><strong>Thermal Radiation:</strong> Any body in our universe at
+finite temperature emits radiation in practically all frequencies.</p>
+<p><strong>Definition of a Blackbody:</strong> A body that absorbs all
+the radiation incident upon it and emits radiation in all the
+frequencies.</p>
+<p><strong>Definition of Spectral Radiancy:</strong> Total energy
+emitted per unit volume per unit time in the frequency range <span
+class="math inline"><em>ν</em></span> to <span
+class="math inline"><em>ν</em></span> + d<span
+class="math inline"><em>ν</em></span></p>
+<p>or</p>
+<p>Total energy emitted per unit cross-sectional area per unit time in
+the frequency range <span class="math inline"><em>ν</em></span> to <span
+class="math inline"><em>ν</em></span> + d<span
+class="math inline"><em>ν</em></span></p>
+<figure id="fig:1.0" data-latex-placement="h">
+<img src="./bb1.png" style="width:30.0%" />
+<figcaption>A cavity acting as a blackbody</figcaption>
+</figure>
+<p><strong>Wien’s Displacement Law:</strong> The wavelength at which a
+blackbody radiates maximum intensity is inversely proportional to its
+absolute temperature. The law is expressed mathematically as:</p>
+<p><span class="math display">$$\begin{align}
+    \lambda _{max}=\frac{b}{T}\
+\end{align}$$</span></p>
+<p>Wien’s constant, b = 2.9 × 10<sup>−3</sup> mK</p>
+<p><strong>Stefan’s Law:</strong> The total thermal radiation power
+emitted by an object is directly proportional to its surface area and
+the fourth power of its absolute temperature. For an ideal black body,
+the total radiancy R is calculated as:</p>
+<p><span
+class="math display"><em>R</em> = <em>σ</em><em>A</em><em>T</em><sup>4</sup></span></p>
+<p>Stefan-Boltzmann constant, <span
+class="math inline"><em>σ</em></span> =
+5.670 × 10<sup>−8</sup> W m<sup>2</sup> K<sup>−−4</sup></p>
+<h3 id="rayleigh-jeans-theory"><strong>Rayleigh-Jean’s
+Theory</strong></h3>
+<ul>
+<li><p>The internal walls of the black body behave like simple harmonic
+oscillators.</p></li>
+<li><p>Each vibrating motion is associated with a standing wave of
+radiation within a black body.</p></li>
+<li><p>There can be an infinite number of standing waves of all
+wavelengths within the black body cavity (blackbody can absorb radiation
+of any frequency), hence, at a given temperature, the number of standing
+waves within a wavelength range <span
+class="math inline"><em>λ</em></span> to <span
+class="math inline"><em>λ</em> + <em>d</em><em>λ</em></span> depends on
+the temperature.</p></li>
+<li><p>At any given instant, the amount of waves of diff<span
+class="math inline"><sup><em>n</em></sup></span> <span
+class="math inline"><em>λ</em></span> coming out of the black body is
+proportional to the amount of standing waves of different <span
+class="math inline"><sup><em>n</em></sup></span> <span
+class="math inline"><em>λ</em></span> within the cavity.</p></li>
+</ul>
+<figure id="fig:placeholder" data-latex-placement="h">
+<img src="./image.png" style="width:30.0%" />
+<figcaption>Spectral Radiancy (R) vs Frequency <span
+class="math inline"><em>ν</em></span></figcaption>
+</figure>
+<figure id="fig:placeholder">
+<img src="./bb2.png" style="width:50.0%" />
+<figcaption>Rayleigh-Jean Theory works very well at larger wavelengths,
+but at smaller wavelengths, <strong>ultraviolet
+catastrophe</strong>occurs.</figcaption>
+</figure>
+</body>
+</html>
