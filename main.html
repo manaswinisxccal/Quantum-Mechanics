@@ -5,22 +5,7 @@
   <meta name="generator" content="pandoc" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
   <meta name="author" content="Manaswini Mandal" />
-  <meta name="dcterms.date" content="2026-06-13" />
-  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js"></script>
-  <script>
-  window.MathJax = {
-        tex: {
-            tags: 'ams' 
-            ams: { multlineWidth: '85%' }
-        },
-        options: {
-            renderActions: {
-                addMenu: []        
-            }
-        }
-    };
-    </script>
-  <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+  <meta name="dcterms.date" content="2026-06-14" />
   <title>The Hitchhiker’s Guide to Quantum Mechanics</title>
   <style>
     /* Default styles provided by pandoc.
@@ -193,7 +178,7 @@
 <h1 class="title"><strong>The Hitchhiker’s Guide to Quantum
 Mechanics</strong></h1>
 <p class="author"><strong>Manaswini Mandal</strong></p>
-<p class="date">2026-06-13</p>
+<p class="date">2026-06-14</p>
 </header>
 <h1 id="introduction"><strong>Introduction</strong></h1>
 <p>Essentially, all of chemistry is a consequence of the laws of quantum
@@ -229,56 +214,60 @@ and <strong>Diffraction</strong><br />
 whereas particles follow <strong>Newton’s Equation of
 Motion</strong>.</p>
 <p><strong>Scalar Wave Equation:</strong></p>
-<p><span class="math display">\begin{equation}
+<p>(1) <span class="math display">$$\begin{equation*}
     \frac{\partial^2 E}{\partial t^2} = c^2 \frac{\partial^2 E}{\partial
 x^2}
-\end{equation}</span> (1) is applicable to an electromagnetic
+\end{equation*}$$</span> (1) is applicable to an electromagnetic
 wave.</p>
 <p>For an elementary wave, the change of change of anything with respect
 to time is proportional to the change of change of anything with respect
 to space.</p>
-<p><span class="math display">\begin{equation}
+<p>(2) <span class="math display">$$\begin{equation*}
     E = A \sin\left(\frac{2 \pi x}{\lambda} - 2 \pi \nu t\right)
-\end{equation}</span> let <span class="math inline">\(\frac{2 \pi
-}{\lambda} = k\)</span> and <span
+\end{equation*}$$</span> let <span class="math inline">$\frac{2 \pi
+}{\lambda} = k$</span> and <span
 class="math inline">2<em>π</em><em>ν</em> = <em>ω</em></span>. Then, E =
 A sin(kx-<span class="math inline"><em>ω</em></span>t)</p>
-<p>Now, we calculate the second time derivative of (2) <span
-class="math display">\begin{align}
+<p>Now, we calculate the second time derivative of (2)</p>
+<p>(3), (4)<span class="math display">$$\begin{align*}
     \frac{\partial E}{\partial t} &amp;= -\omega A \cos(kx - \omega t)
 \\
     \frac{\partial^2 E}{\partial t^2} &amp;= -\omega^2 A \sin(kx -
 \omega t)
-\end{align}</span></p>
-<p>Similarly, calculating the second spatial derivative of (2) <span
-class="math display">\begin{align}
+\end{align*}$$</span></p>
+<p>Similarly, calculating the second spatial derivative of (2)</p>
+<p>(5), (6) <span class="math display">$$\begin{align*}
     \frac{\partial E}{\partial x} &amp;= k A \cos(kx - \omega t) \\
     \frac{\partial^2 E}{\partial x^2} &amp;= -k^2 A \sin(kx - \omega t)
-\end{align}</span></p>
+\end{align*}$$</span></p>
 <p>Substituting Equation (4) and Equation (6) back into the wave
-equation (1) yields: <span
+equation (1) yields:</p>
+<p>(7) <span
 class="math display">−<em>ω</em><sup>2</sup><em>A</em>sin (<em>k</em><em>x</em> − <em>ω</em><em>t</em>) = <em>c</em><sup>2</sup>(−<em>k</em><sup>2</sup><em>A</em>sin (<em>k</em><em>x</em> − <em>ω</em><em>t</em>))</span></p>
 <p>Dividing both sides by <span
 class="math inline">−<em>A</em>sin (<em>k</em><em>x</em> − <em>ω</em><em>t</em>)</span>
-simplifies the expression to: <span
+simplifies the expression to:</p>
+<p>(8) <span
 class="math display"><em>ω</em><sup>2</sup> = <em>c</em><sup>2</sup><em>k</em><sup>2</sup></span></p>
-<p>Taking the positive square root of both sides gives: <span
+<p>Taking the positive square root of both sides gives:</p>
+<p>(9) <span
 class="math display"><em>ω</em> = <em>c</em><em>k</em></span></p>
-<p>Again, as shown previously, <span
-class="math display">\begin{equation}
+<p>Again, as shown previously,</p>
+<p>(10) <span class="math display">$$\begin{equation*}
     \omega = 2\pi\nu, k = \frac{2\pi}{\lambda}
-\end{equation}</span></p>
-<p>Substituting these two relations into (9); <span
-class="math display">\begin{equation}
+\end{equation*}$$</span></p>
+<p>Substituting these two relations into (9);</p>
+<p>(11) <span class="math display">$$\begin{equation*}
     2\pi\nu = c \left( \frac{2\pi}{\lambda} \right)
-\end{equation}</span></p>
+\end{equation*}$$</span></p>
 <p>Dividing both sides by <span class="math inline">2<em>π</em></span>
-simplifies the equation to: <span
-class="math display">\begin{equation}
+simplifies the equation to:</p>
+<p>(12) <span class="math display">$$\begin{equation*}
     \nu = \frac{c}{\lambda}
-\end{equation}</span></p>
+\end{equation*}$$</span></p>
 <p>Multiplying both sides by <span class="math inline"><em>λ</em></span>
-gives the final relationship: <span
+gives the final relationship:</p>
+<p>(13) <span
 class="math display"><em>c</em> = <em>λ</em><em>ν</em></span></p>
 <p>Hence proved.</p>
 <h1 id="limitations-of-classical-physics"><strong>Limitations of
@@ -328,10 +317,10 @@ light as a wave consisting of oscillating electric and magnetic fields,
 an electromagnetic wave. The frequency <span
 class="math inline"><em>ν</em></span> and wavelength <span
 class="math inline"><em>λ</em></span> of an electromagnetic wave
-travelling through vacuum is related by</p>
-<p><span class="math display">\begin{align}
+traveling through vacuum are related by</p>
+<p>(14) <span class="math display">$$\begin{align*}
     \lambda \nu &amp;= c
-\end{align}</span></p>
+\end{align*}$$</span></p>
 <p>where <span class="math inline"><em>c</em> = 3.0 × 10<sup>8</sup>
 m/s</span> is the speed of light in vacuum. While human vision is
 sensitive to frequencies between <span
@@ -361,15 +350,15 @@ class="math inline"><em>ν</em></span></p>
 <p><strong>Wien’s Displacement Law:</strong> The wavelength at which a
 blackbody radiates maximum intensity is inversely proportional to its
 absolute temperature. The law is expressed mathematically as:</p>
-<p><span class="math display">\begin{align}
+<p>(15) <span class="math display">$$\begin{align*}
     \lambda _{max}=\frac{b}{T}\
-\end{align}</span></p>
+\end{align*}$$</span></p>
 <p>Wien’s constant, b = 2.9 × 10<sup>−3</sup> mK</p>
 <p><strong>Stefan’s Law:</strong> The total thermal radiation power
 emitted by an object is directly proportional to its surface area and
 the fourth power of its absolute temperature. For an ideal black body,
 the total radiancy R is calculated as:</p>
-<p><span
+<p>(16) <span
 class="math display"><em>R</em> = <em>σ</em><em>A</em><em>T</em><sup>4</sup></span></p>
 <p>Stefan-Boltzmann constant, <span
 class="math inline"><em>σ</em></span> =
@@ -403,8 +392,410 @@ class="math inline"><em>ν</em></span></figcaption>
 <figure id="fig:placeholder">
 <img src="./bb2.png" style="width:50.0%" />
 <figcaption>Rayleigh-Jean Theory works very well at larger wavelengths,
-but at smaller wavelengths, <strong>ultraviolet
-catastrophe</strong>occurs.</figcaption>
+but at smaller wavelengths, <strong>ultraviolet catastrophe</strong>
+occurs.</figcaption>
 </figure>
+<p>For further calculations, we calculate the number of nodes, which are
+countably infinite, instead of wavelength, which are uncountably
+infinite.</p>
+<figure data-latex-placement="htbp">
+<img src="./cube_standing_waves.png" style="width:30.0%" />
+<figcaption>Standing waves in a 3D cavity.</figcaption>
+</figure>
+<p><strong>Standing waves: criteria</strong><br />
+nodes at the walls<br />
+in 1-D, eqn of standing wave:<br />
+<span class="math inline"><em>L</em></span> is an integral multiple of
+<span class="math inline">$\frac{\lambda}{2}$</span> <span
+class="math display">$$\Rightarrow L = \frac{n\lambda}{2} \quad n \in
+\mathbb{N}$$</span></p>
+<p>In 2-D, the projection of the wave in any direction should be a
+standing wave. <span class="math display">$$L = \frac{n\lambda}{2}
+\qquad k = \frac{2\pi}{\lambda} \qquad \lambda = \frac{v}{\nu} \qquad v
+= \text{speed}$$</span></p>
+<div class="center">
+<p><span class="math inline">$L = \frac{n\lambda}{2} = \frac{n v}{2\nu}
+\quad \dots \quad n = 1, 2, 3, \dots \qquad k =
+\frac{n\pi}{L}$</span></p>
+</div>
+<p><span
+class="math display"><em>ψ</em> = <em>e</em><sup><em>i</em>(<em>k⃗</em> ⋅ <em>x⃗</em> − <em>ω</em><em>t</em>)</sup></span></p>
+<div class="center">
+<p>in 3-D, <span
+class="math inline"><em>x⃗</em> = <em>r⃗</em></span><br />
+then <span class="math inline"><em>k</em></span> must be a vector so
+that the product becomes scalar <span
+class="math inline"> → <em>e</em><sup>scalar</sup></span>.</p>
+</div>
+<p><span class="math inline">∴ <em>k⃗</em>→</span> vector</p>
+<p>In 3-D, the components of the standing wave must satisfy: <span
+class="math display">$$k_x = \frac{n_x\pi}{L} \qquad k_y =
+\frac{n_y\pi}{L} \qquad k_z = \frac{n_z\pi}{L}$$</span></p>
+<p><span
+class="math display"><em>n</em><sub><em>x</em></sub>, <em>n</em><sub><em>y</em></sub>, <em>n</em><sub><em>z</em></sub> → 1, 2, 3, …</span>
+<span
+class="math display"><em>k</em><sup>2</sup> = <em>k</em><sub><em>x</em></sub><sup>2</sup> + <em>k</em><sub><em>y</em></sub><sup>2</sup> + <em>k</em><sub><em>z</em></sub><sup>2</sup></span>
+<span class="math display">$$\Rightarrow \boxed{n^2 = n_x^2 + n_y^2 +
+n_z^2} \rightarrow \text{condition}$$</span></p>
+<figure data-latex-placement="h">
+<img src="./n_space_shell.png" style="width:40.0%" />
+<figcaption>Octant of a spherical shell in <span
+class="math inline"><em>n</em></span>-space.</figcaption>
+</figure>
+<p>The number of standing waves between <span
+class="math inline"><em>n</em></span> and <span
+class="math inline"><em>n</em> + <em>d</em><em>n</em></span> is
+proportional to the volume of <span
+class="math inline">$\frac{1}{8}$</span>th of a shell of inner radius
+<span class="math inline"><em>n</em></span> and outer radius <span
+class="math inline"><em>n</em> + <em>d</em><em>n</em></span>.</p>
+<p><span class="math display">$$N \propto \frac{1}{8} \left[
+\frac{4}{3}\pi(n+dn)^3 - \frac{4}{3}\pi n^3 \right]$$</span></p>
+<p><span class="math display">$$\text{or, } N \propto \frac{1}{8} \left[
+\frac{4}{3}\pi \left( (dn)^3 + 3n^2dn + 3n(dn)^2 \right)
+\right]$$</span></p>
+<p>As <span class="math inline"><em>d</em><em>n</em></span> is very
+small, <span
+class="math inline">(<em>d</em><em>n</em>)<sup>2</sup></span> and <span
+class="math inline">(<em>d</em><em>n</em>)<sup>3</sup></span> can be
+neglected: <span class="math display">$$N \propto \frac{1}{8} \left[
+\frac{4}{3}\pi \cdot 3n^2dn \right]$$</span> <span
+class="math display">$$N \propto \frac{\pi}{2} n^2dn$$</span></p>
+<p><strong>again,</strong> <span class="math display">$$n =
+\frac{2L}{\lambda} = \frac{kL}{\pi} = \frac{2\nu L}{v}$$</span></p>
+<p><span class="math display">$$n^2 = \frac{4L^2}{\lambda^2} =
+\frac{k^2L^2}{\pi^2} = \frac{4\nu^2 L^2}{v^2}$$</span></p>
+<p><span class="math display">$$dn = -\frac{2L}{\lambda^2} d\lambda
+\equiv \frac{L}{\pi} dk \equiv \frac{2L}{v} d\nu$$</span></p>
+<p><span class="math display">$$n^2dn = -\frac{8L^3}{\lambda^4} d\lambda
+\equiv \frac{k^2L^3}{\pi^3} dk \equiv \frac{8\nu^2 L^3}{v^3}
+d\nu$$</span></p>
+<p><strong>now,</strong> <span class="math display">$$N \propto
+\frac{\pi}{2} n^2dn \quad \text{(number of of standing waves between } n
+\text{ to } n+dn\text{)}$$</span></p>
+<p>number of standing waves <span class="math display">$$\text{between }
+\lambda \text{ to } \lambda+d\lambda \quad \propto \frac{\pi}{2} \left(
+\frac{-8L^3}{\lambda^4} \right) d\lambda \rightarrow \frac{-4\pi
+L^3}{\lambda^4} d\lambda \rightarrow \frac{+4\pi L^3}{\lambda^4}
+(-d\lambda)$$</span></p>
+<p><span class="math display">$$\text{b/w } k \text{ to } k+dk \quad
+\propto \frac{k^2}{2\pi^2} L^3 dk$$</span></p>
+<p><span class="math display">$$\text{b/w } \nu \text{ to } \nu+d\nu
+\quad \propto \frac{4\pi\nu^2}{v^3} L^3 d\nu$$</span></p>
+<div class="flushright">
+<p><span class="math inline">$\left[ \begin{aligned}
+&amp;\text{justify the sign:} \\
+&amp;d\lambda &lt; 0 \text{ because } \nu &gt; 0
+\end{aligned} \right]$</span></p>
+</div>
+<p>Each standing wave is associated with a vibrational degree of the
+black body cavity.<br />
+Actually for light, <span
+class="math inline"><em>N</em> = 2<em>N</em></span><br />
+since standing waves are light waves having two orientations of
+polarization.</p>
+<h3 id="rayleigh---jeans-formula"><strong>Rayleigh - Jean’s
+Formula</strong></h3>
+<p>Rayleigh - Jean used the equipartition principle to determine the
+average energy associated with each vibrational degree of freedom.</p>
+<p><span
+class="math display">⟨ℰ⟩ = <em>k</em><sub><em>B</em></sub><em>T</em>   here
+<em>k</em><sub><em>B</em></sub> → Boltzmann constant</span></p>
+<p>Average energy associated with a standing wave in the frequency range
+<span class="math inline"><em>ν</em></span> to <span
+class="math inline"><em>ν</em> + <em>d</em><em>ν</em></span> is equal
+to:</p>
+<p><span
+class="math display">ℰ<sub><em>ν</em> → <em>ν</em> + <em>d</em><em>ν</em></sub> ∝ <em>N</em><sub><em>ν</em> → <em>ν</em> + <em>d</em><em>ν</em></sub> × <em>k</em><sub><em>B</em></sub><em>T</em></span>
+<span class="math display">$$\propto \frac{4\pi\nu^2}{v^3} L^3 d\nu
+\cdot k_B T$$</span></p>
+<p>Here, standing waves are light waves having two orientations of
+polarization. <span class="math display">Therefore, total number of
+waves  → 2<em>N</em></span></p>
+<p><span class="math display">$$\rightarrow \propto
+\frac{8\pi\nu^2}{c^3} L^3 d\nu \cdot k_B T$$</span></p>
+<p><span class="math display">$$R_{\nu \rightarrow \nu + d\nu} =
+\frac{2\pi\nu^2}{c^2} k_B T d\nu$$</span></p>
+<p>According to the Rayleigh-Jean formula, experimental behaviour does
+not match in the ultraviolet and above regions <span
+class="math inline">→</span> known as <strong>ultraviolet
+catastrophe</strong></p>
+<h3 id="plancks-derivation"><strong>Planck’s derivation</strong><br />
+</h3>
+<p><strong>extra approximation</strong> <span
+class="math inline">→</span> Matter interacts with radiation in fixed
+packets of energy; i.e., any matter absorbs or emits radiation in
+multiples of a fixed energy value, given by: <span
+class="math display"><em>E</em> = <em>n</em><em>h</em><em>ν</em> → energy
+packet</span> <span
+class="math display"><em>n</em> = 1, 2, 3, …</span></p>
+<p><strong>Birth of Quantum Mechanics</strong> – 14th December 1900</p>
+<p><span class="math display">$$\langle\mathcal{E}\rangle =
+\frac{\int_{\mathcal{E}=0}^{\mathcal{E}=\infty} \mathcal{E}
+P(\mathcal{E}) d\mathcal{E}}{\int_{\mathcal{E}=0}^{\mathcal{E}=\infty}
+P(\mathcal{E}) d\mathcal{E}} \longrightarrow \text{for continuous
+distribution}$$</span></p>
+<p><strong>in case of Planck, he suggested a discrete
+distribution</strong> <span
+class="math display">$$\langle\mathcal{E}\rangle =
+\frac{\sum_{i=0}^{\infty} (ih\nu) P(ih\nu)}{\sum_{i=0}^{\infty}
+P(ih\nu)}$$</span></p>
+<p><span class="math display">$$P(ih\nu) = e^{-ih\nu/k_B T} =
+e^{-ih\nu\beta} \qquad \beta = \frac{1}{k_B T}$$</span></p>
+<p><span class="math display">$$\langle\mathcal{E}\rangle =
+\frac{\sum_{i=0}^{\infty} (ih\nu) e^{-ih\nu\beta}}{\sum_{i=0}^{\infty}
+e^{-ih\nu\beta}} \qquad \qquad \left[ \begin{aligned}
+\frac{d}{d\beta}\left(e^{-ih\nu\beta}\right) &amp;= -ih\nu
+e^{-ih\nu\beta} \\
+\frac{d}{d\beta}\left\{\sum_{i=0}^{\infty} e^{-ih\nu\beta}\right\}
+&amp;= \sum_{i=0}^{\infty} \frac{d}{d\beta} e^{-ih\nu\beta} \\
+&amp;= -\sum_{i=0}^{\infty} (ih\nu) e^{-ih\nu\beta}
+\end{aligned}\right]$$</span></p>
+<p><span class="math display">$$= \frac{-1}{\sum_{i=0}^{\infty}
+e^{-ih\nu\beta}} \frac{d}{d\beta}\left(\sum_{i=0}^{\infty}
+e^{-ih\nu\beta}\right)$$</span></p>
+<p><span class="math display">$$\begin{align*}
+    &amp;= -\frac{d}{d\beta} \ln \left( \sum_{i=0}^{\infty}
+e^{-ih\nu\beta} \right) \qquad \qquad \qquad \sum_{i=0}^{\infty}
+e^{-ih\nu\beta} \\
+    &amp;= -\frac{d}{d\beta} \ln \left( \frac{1}{1 - e^{-h\nu\beta}}
+\right) \qquad \qquad \qquad = \sum_{i=0}^{\infty} \left\{
+e^{-h\nu\beta} \right\}^i \\
+    &amp;= +\frac{d}{d\beta} \ln \left( 1 - e^{-h\nu\beta} \right)
+\qquad \qquad \qquad = 1 + \left(e^{-h\nu\beta}\right) +
+\left(e^{-h\nu\beta}\right)^2 + \left(e^{-h\nu\beta}\right)^3 + \dots \\
+    &amp;= \frac{1}{1 - e^{-h\nu\beta}} \cdot \left( h\nu e^{-h\nu\beta}
+\right) \\
+    &amp;= \frac{h\nu e^{-h\nu\beta}}{1 - e^{-h\nu\beta}} \qquad \qquad
+\qquad \qquad \text{if } h\nu \gg k_B T, \text{ then } h\nu\beta \text{
+is large, } x = e^{-h\nu\beta} \rightarrow \text{small} \\
+    &amp;= \frac{h\nu}{e^{h\nu\beta} - 1} \qquad \begin{matrix}
+\text{Taylor's expression} \\ \frac{1}{1-x} \rightarrow x \text{ is
+small} \end{matrix} \quad \begin{matrix} \rightarrow 1+x+x^2+x^3+\dots
+\\ \approx \frac{1}{1-x} \approx \frac{1}{1 - e^{-h\nu\beta}}
+\end{matrix}
+\end{align*}$$</span></p>
+<p><span
+class="math display">∴ <em>E</em><sub><em>ν</em> → <em>ν</em> + <em>d</em><em>ν</em></sub> = <em>N</em>⟨ℰ⟩</span>
+<span class="math display">$$= \frac{8\pi\nu^2}{c^3} L^3
+\frac{h\nu}{e^{h\nu/k_B T} - 1} d\nu$$</span></p>
+<p><span class="math display">$$= \boxed{\frac{8\pi h \nu^3}{c^3} L^3
+\frac{1}{e^{h\nu/k_B T} - 1} d\nu} \longrightarrow E_{\nu \rightarrow
+\nu + d\nu}$$</span></p>
+<p><span class="math display">$$R_{\nu \rightarrow \nu + d\nu} =
+\frac{c}{4} \cdot \frac{E_{\nu \rightarrow \nu + d\nu}}{L^3}$$</span>
+<span class="math display">$$= \boxed{\frac{2\pi h}{c^2}
+\frac{\nu^3}{e^{h\nu/k_B T} - 1} d\nu} \longrightarrow R_{\nu
+\rightarrow \nu + d\nu}$$</span></p>
+<p>as <span class="math inline"><em>ν</em> → 0</span>: <span
+class="math inline"><em>ν</em><sup>3</sup> → 0</span>, <span
+class="math inline"><em>e</em><sup><em>h</em><em>ν</em>/<em>k</em><sub><em>B</em></sub><em>T</em></sup> → 1</span>,
+<span
+class="math inline"><em>e</em><sup><em>h</em><em>ν</em>/<em>k</em><sub><em>B</em></sub><em>T</em></sup> − 1 → 0</span><br />
+hence we obtain a <span class="math inline">$\frac{0}{0}$</span> form,
+asymptote</p>
+<p><span class="math display">$$\begin{align*}
+    &amp;f(a+h) \\
+    &amp;\downarrow \\
+    &amp;f(0+h) \\
+    &amp;e^{(0+h)} = 1 + \frac{h}{1!} + \frac{h^2}{2!} + \dots \\
+    &amp;e^{h\nu/k_B T} = 1 + \frac{h\nu}{1! k_B T} + \frac{(h\nu)^2}{2!
+(k_B T)^2} + \dots \\
+    &amp;\approx 1 + \frac{h\nu}{k_B T} \cdot \frac{1}{1!} \quad
+\text{neglecting higher powers}
+\end{align*}$$</span></p>
+<p><span class="math display">$$e^{h\nu/k_B T} - 1 \approx
+\frac{h\nu}{k_B T}$$</span></p>
+<p><span class="math display">$$\lim_{\nu \rightarrow 0} R_{\nu
+\rightarrow \nu + d\nu} = \lim_{\nu \rightarrow 0} \frac{2\pi}{c^2} (k_B
+T) \nu^2 d\nu \qquad \longrightarrow \text{Rayleigh-Jean
+formula}$$</span> <span class="math display"> = 0</span></p>
+<p>as <span class="math inline"><em>ν</em> → 0</span> : <span
+class="math inline">$\frac{h\nu}{k_B T} \rightarrow 0$</span></p>
+<p>as <span class="math inline"><em>ν</em> → ∞</span> : <span
+class="math display">$$R_{\nu \rightarrow \nu + d\nu} = \frac{2\pi
+h}{c^2} \frac{\nu^3 e^{-h\nu/k_B T}}{\left(1 - e^{-h\nu/k_B T}\right)}
+d\nu \longrightarrow \frac{\infty \times 0}{0} \text{ form}$$</span></p>
+<p><strong>now,</strong> <span class="math inline">$\frac{1}{1-h} = 1 +
+h + h^2 + \dots$</span><br />
+because <span class="math inline">$\frac{1}{1-x} = (1-x)^{-1} = 1 + x +
+x^2 + x^3 + \dots$</span></p>
+<p><span class="math display">$$\lim_{\nu \rightarrow \infty} R_{\nu
+\rightarrow \nu + d\nu} = \frac{2\pi h}{c^2} \nu^3 e^{-h\nu/k_B T}
+\left( 1 + e^{-h\nu/k_B T} \right) d\nu$$</span></p>
+<div class="center">
+<p>We have to prove that exponential-decay term dominates<br />
+over any finite polynomial.</p>
+</div>
+<p><span class="math display">$$e^{-x} = 1 - x + \frac{x^2}{2!} -
+\frac{x^3}{3!} + \frac{x^4}{4!} - \dots \qquad
+\text{[CONVERGENT]}$$</span> <span class="math display">$$x^3 e^{-x} =
+x^3 - x^4 + \frac{x^5}{2!} - \dots \qquad \qquad
+\text{[CONVERGENT]}$$</span></p>
+<p>if <span class="math inline"><em>e</em><sup>−<em>x</em></sup></span>
+converges to <span
+class="math inline">0 → <em>x</em><sup>3</sup><em>e</em><sup>−<em>x</em></sup></span>
+also converges to <span class="math inline">0</span> no matter <span
+class="math inline"><em>x</em> → ∞</span></p>
+<p><span
+class="math inline"><em>ν</em><sup>3</sup><em>e</em><sup>−<em>h</em><em>ν</em>/<em>k</em><sub><em>B</em></sub><em>T</em></sup> → 0</span>
+on the condition <span
+class="math inline">(1 + <em>e</em><sup>−<em>h</em><em>ν</em>/<em>k</em><sub><em>B</em></sub><em>T</em></sup>)</span>
+is almost equal to <span class="math inline">1</span>.</p>
+<p><span
+class="math display">∴ lim<sub><em>ν</em> → ∞</sub><em>R</em><sub><em>ν</em> → <em>ν</em> + <em>d</em><em>ν</em></sub> → 0</span></p>
+<p><strong>The maxima:</strong> <span class="math inline">$\quad \left(
+\frac{R_{\nu \rightarrow \nu + d\nu}}{d\nu} \right) \rightarrow
+R'$</span></p>
+<p><span class="math display">$$R' = \frac{2\pi h}{c^2} \nu^3
+\frac{1}{e^{h\nu/k_B T} - 1}$$</span></p>
+<p><span class="math display">$$\frac{dR'}{d\nu} = \frac{2\pi h}{c^2}
+\left\{ \frac{3\nu^2}{e^{h\nu/k_B T} - 1} - \frac{\nu^3 \frac{h}{k_B T}
+e^{h\nu/k_B T}}{\left( e^{h\nu/k_B T} - 1 \right)^2}
+\right\}$$</span></p>
+<p><span class="math display">$$= \frac{2\pi h}{c^2} \nu^2 \left(
+e^{h\nu/k_B T} - 1 \right)^{-1} \left\{ 3 - \frac{\frac{h\nu}{k_B
+T}}{\left( 1 - e^{-h\nu/k_B T} \right)} \right\}$$</span></p>
+<p><span class="math display"> = 0   at maxima
+<em>ν</em> = <em>ν</em><sub><em>m</em><em>a</em><em>x</em></sub></span></p>
+<p><strong>at maxima :</strong> <span
+class="math inline"><em>ν</em> = <em>ν</em><sub><em>m</em></sub></span>
+<span class="math display">$$\frac{2\pi h}{c^2} \nu_m^2 \left(
+e^{h\nu_m/k_B T} - 1 \right)^{-1} \left\{ 3 - \frac{\frac{h\nu_m}{k_B
+T}}{\left( 1 - e^{-h\nu_m/k_B T} \right)} \right\} = 0$$</span></p>
+<p><strong>either</strong> <span
+class="math inline"><em>ν</em><sub><em>m</em></sub> = 0</span></p>
+<p><strong>or,</strong> <span
+class="math inline">$\frac{1}{e^{h\nu_m/k_B T} - 1} = 0 \implies
+e^{h\nu_m/k_B T} \rightarrow \infty \implies \nu_m \rightarrow
+\infty$</span></p>
+<p><strong>or,</strong> <span class="math display">$$\frac{3 -
+\frac{h\nu_m}{k_B T}}{1 - e^{-h\nu_m/k_B T}} = 0$$</span></p>
+<p><span class="math display">$$\implies \frac{\frac{h\nu_m}{k_B T}}{1 -
+e^{-h\nu_m/k_B T}} = 3$$</span></p>
+<p><span class="math display">$$\implies \frac{h\nu_m}{k_B T} = 3 -
+3e^{-\frac{h\nu_m}{k_B T}}$$</span></p>
+<figure data-latex-placement="h">
+<img src="./equation_intersection.png" style="width:40.0%" />
+</figure>
+<p>Finally, we declare suitable forms of Planck’s Blackbody Radiation
+Formula, and from there, verify Wien’s Displacement Law and Stefan’s Law
+as well as the values of Wien’s constant and Stefan’s constant.</p>
+<p><em>Using the solution of the equation, <span
+class="math inline"><em>e</em><sup>−<em>x</em></sup> + <em>x</em>/5 = 1</span>
+as <span class="math inline"><em>x</em> = 4.965</span></em></p>
+<p><span class="math display">$$R_{\nu \rightarrow \nu + d\nu} =
+\frac{2\pi h}{c^2} \frac{\nu^3}{e^{h\nu/k_B T} - 1} d\nu \qquad \qquad
+\left[ \begin{aligned}
+&amp;\text{if Planck's formula} \\
+&amp;\text{derived in terms} \\
+&amp;\text{of } \lambda, \longrightarrow \boxed{\frac{x}{5}} \\
+\\
+&amp;\text{if in terms of freqn.} \\
+&amp;\longrightarrow \boxed{\frac{x}{3}}
+\end{aligned} \right]$$</span></p>
+<p><span class="math display">$$R' = \frac{2\pi h}{c^2}
+\frac{\nu^3}{e^{h\nu/k_B T} - 1}$$</span></p>
+<p><span class="math display">$$\frac{dR'}{d\nu} = 0 \implies
+\frac{h\nu_m}{k_B T} = 3\left(1 - e^{-\frac{h\nu_m}{k_B
+T}}\right)$$</span></p>
+<p><span class="math display">$$\text{let } x = \frac{h\nu_m}{k_B T}
+\longrightarrow \begin{aligned}
+x &amp;= 3(1 - e^{-x}) \\
+e^{-x} &amp;+ \frac{x}{3} = 1
+\end{aligned}$$</span></p>
+<p><span class="math display">$$\implies \nu_m = \frac{k_B T
+x}{h}$$</span></p>
+<p><span class="math display">$$\frac{T}{\nu_m} = \frac{h}{xk} \implies
+\lambda_m \times T = \frac{hc}{xk} \longrightarrow \begin{matrix}
+\text{needed to find} \\ \text{the value for} \\ \text{wien's constant}
+\end{matrix}$$</span></p>
+<p><strong>in terms of</strong> <span
+class="math inline"><em>λ</em></span>, <span
+class="math display">$$\begin{align*}
+    \nu\lambda &amp;= c \\
+    \nu &amp;= c\lambda^{-1} \\
+    \nu^3 &amp;= c^3\lambda^{-3} \\
+    d\nu &amp;= -c\lambda^{-2} d\lambda \\
+    \nu^3 d\nu &amp;= -c^4 \lambda^{-5} d\lambda \longrightarrow
+\begin{matrix} \text{-ve sign not} \\ \text{included as } d\lambda &lt;
+0 \\ \text{when } \nu \rightarrow \nu + d\nu \end{matrix}
+\end{align*}$$</span></p>
+<p><span class="math display">$$R_{\lambda \rightarrow \lambda +
+d\lambda} = \frac{2\pi h}{c^2} \frac{\cdot c^4
+\lambda^{-5}}{e^{hc/\lambda k_B T} - 1} d\lambda$$</span> <span
+class="math display">$$= \frac{2\pi h c^2 \lambda^{-5}}{e^{hc/\lambda
+k_B T} - 1} d\lambda$$</span></p>
+<p><span class="math display">$$R' = \frac{2\pi h c^2
+\lambda^{-5}}{e^{hc/\lambda k_B T} - 1}$$</span></p>
+<p><span class="math display">$$\frac{dR'}{d\lambda} = 2\pi h c^2
+\left\{ -5\lambda^{-6}\left(e^{hc/\lambda k_B T} - 1\right)^{-1} +
+\lambda^{-5}\frac{\frac{hc}{k_B T} e^{hc/\lambda k_B
+T}}{\left(e^{hc/\lambda k_B T} - 1\right)^2} \right\}$$</span></p>
+<p><span class="math display">$$= 2\pi h c^2 \lambda_m^{-6}
+\left(e^{\frac{hc}{k_B T \lambda_m}} - 1\right)^{-1} \left\{ -5 +
+\frac{hc/\lambda_m k_B T}{1 - e^{-hc/\lambda_m k_B T}}
+\right\}$$</span></p>
+<p><span class="math display"> = 0</span></p>
+<p><strong>either</strong> <span
+class="math inline"><em>λ</em><sub><em>m</em></sub><sup>−6</sup> = 0 ⟹ <em>λ</em> → ∞</span><br />
+<strong>or</strong> <span
+class="math inline">(<em>e</em><sup><em>h</em><em>c</em>/<em>λ</em><sub><em>m</em></sub><em>k</em><sub><em>B</em></sub><em>T</em></sup> − 1)<sup>−1</sup> = 0 ⟹ <em>λ</em><sub><em>m</em></sub> → 0</span></p>
+<p><span class="math display">$$\text{or } \frac{-5 +
+\frac{hc}{\lambda_m k_B T}}{1 - e^{-hc/\lambda_m k_B T}} = 0$$</span>
+<span class="math display">$$\text{let } \frac{hc}{\lambda k_B T} =
+y$$</span></p>
+<p><span class="math display">$$\implies \frac{-5 + y}{1 - e^{-y}} =
+0$$</span></p>
+<p><span class="math display">$$\implies e^{-y} + \frac{y}{5} = 1 \qquad
+\begin{aligned}
+y &amp;= 4.965 \\
+\frac{hc}{\lambda_m k_B T} &amp;= 4.965 \\
+\lambda_m &amp;= \frac{hc}{4.965 k_B T}
+\end{aligned}$$</span></p>
+<p><span class="math display">$$\therefore \boxed{\lambda_m \cdot T =
+\frac{hc}{4.965 k_B}} \longrightarrow \text{same for both } \frac{x}{3}
+\text{ \&amp; } \frac{x}{5}$$</span></p>
+<p><span class="math inline"><em>h</em> = 6.626 × 10<sup>−34</sup> J
+s</span><br />
+<span class="math inline"><em>c</em> = 3 × 10<sup>8</sup> m
+s<sup>−1</sup></span><br />
+<span
+class="math inline"><em>k</em><sub><em>B</em></sub> = 1.38 × 10<sup>−23</sup>
+J K<sup>−1</sup></span></p>
+<p><span class="math display">$$\frac{hc}{4.965 k_B} = \frac{6.626
+\times 10^{-34} \text{ J s} \times 3 \times 10^8 \text{ m s}^{-1}}{4.965
+\times 1.38 \times 10^{-23} \text{ J K}^{-1}}$$</span></p>
+<p><span class="math display">$$= \frac{6.626 \times 3}{4.965 \times
+1.38} \times 10^{-3} \text{ m K}$$</span></p>
+<p><span class="math display"> = 2.9 × 10<sup>−3</sup> m K → Verified
+Wien’s Displacement Law and Wien’s constant.</span></p>
+<div class="center">
+
+</div>
+<p><strong>Stefan’s Law</strong> <span class="math display">$$R =
+\int_{\nu=0}^{\nu=\infty} R_{\nu \rightarrow \nu + d\nu} =
+\int_{\nu=0}^{\nu=\infty} \frac{2\pi h}{c^2} \frac{\nu^3}{e^{h\nu/k_B T}
+- 1} d\nu$$</span></p>
+<p><span class="math display">$$\text{let } \frac{h\nu}{k_B T} = x
+\qquad \nu = \frac{x k_B T}{h} \qquad \nu^3 = \frac{x^3 k_B^3 T^3}{h^3}
+\qquad d\nu = \frac{k_B T}{h} dx$$</span></p>
+<p><span class="math display">$$R = \frac{2\pi}{h^3 c^2} k_B^4 T^4
+\int_{0}^{\infty} \frac{x^3}{e^x - 1} dx \quad \text{[check units]}
+\quad \left| \begin{aligned}
+\nu &amp;\rightarrow 0 \implies x \rightarrow 0 \\
+\nu &amp;\rightarrow \infty \implies x \rightarrow \infty
+\end{aligned} \right.$$</span></p>
+<p><span class="math display">$$\text{standard solution provided}
+\longrightarrow \frac{\pi^4}{15}$$</span></p>
+<p><span class="math display">$$R = \boxed{\left\{ \frac{2\pi^5}{15}
+\frac{k_B^4 T^4}{h^3 c^2} \right\} \equiv R = \sigma T^4} \qquad
+\begin{aligned}
+&amp;\frac{2\pi^5}{15} \cdot \frac{k_B^4}{h^3 c^2} \longrightarrow
+\text{check value} \\
+&amp;\downarrow \\
+&amp;5.7 \times 10^{-8} \text{ W m}^{-2} \text{K}^{-4} \qquad
+\boxed{0.0565 \times 10^{-6}}
+\end{aligned}$$</span></p>
 </body>
 </html>
