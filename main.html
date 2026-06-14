@@ -7,6 +7,23 @@
   <meta name="author" content="Manaswini Mandal" />
   <meta name="dcterms.date" content="2026-06-14" />
   <title>The Hitchhiker’s Guide to Quantum Mechanics</title>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/polyfill/3.27.0/polyfill.min.js"></script>
+
+    <script>
+    window.MathJax = {
+        tex: {
+            tags: 'ams',
+            ams: { multlineWidth: '85%' }
+        },
+        options: {
+            renderActions: {
+                addMenu: []
+            }
+        }
+    };
+    </script>
+
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
   <style>
     /* Default styles provided by pandoc.
     ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
@@ -214,32 +231,32 @@ and <strong>Diffraction</strong><br />
 whereas particles follow <strong>Newton’s Equation of
 Motion</strong>.</p>
 <p><strong>Scalar Wave Equation:</strong></p>
-<p>(1) <span class="math display">$$\begin{equation*}
+<p>(1) <span class="math display">\begin{equation*}
     \frac{\partial^2 E}{\partial t^2} = c^2 \frac{\partial^2 E}{\partial
 x^2}
-\end{equation*}$$</span> (1) is applicable to an electromagnetic
+\end{equation*}</span> (1) is applicable to an electromagnetic
 wave.</p>
 <p>For an elementary wave, the change of change of anything with respect
 to time is proportional to the change of change of anything with respect
 to space.</p>
-<p>(2) <span class="math display">$$\begin{equation*}
+<p>(2) <span class="math display">\begin{equation*}
     E = A \sin\left(\frac{2 \pi x}{\lambda} - 2 \pi \nu t\right)
-\end{equation*}$$</span> let <span class="math inline">$\frac{2 \pi
+\end{equation*}</span> let <span class="math inline">$\frac{2 \pi
 }{\lambda} = k$</span> and <span
 class="math inline">2<em>π</em><em>ν</em> = <em>ω</em></span>. Then, E =
 A sin(kx-<span class="math inline"><em>ω</em></span>t)</p>
 <p>Now, we calculate the second time derivative of (2)</p>
-<p>(3), (4)<span class="math display">$$\begin{align*}
+<p>(3), (4)<span class="math display">\begin{align*}
     \frac{\partial E}{\partial t} &amp;= -\omega A \cos(kx - \omega t)
 \\
     \frac{\partial^2 E}{\partial t^2} &amp;= -\omega^2 A \sin(kx -
 \omega t)
-\end{align*}$$</span></p>
+\end{align*}</span></p>
 <p>Similarly, calculating the second spatial derivative of (2)</p>
-<p>(5), (6) <span class="math display">$$\begin{align*}
+<p>(5), (6) <span class="math display">\begin{align*}
     \frac{\partial E}{\partial x} &amp;= k A \cos(kx - \omega t) \\
     \frac{\partial^2 E}{\partial x^2} &amp;= -k^2 A \sin(kx - \omega t)
-\end{align*}$$</span></p>
+\end{align*}</span></p>
 <p>Substituting Equation (4) and Equation (6) back into the wave
 equation (1) yields:</p>
 <p>(7) <span
@@ -253,18 +270,18 @@ class="math display"><em>ω</em><sup>2</sup> = <em>c</em><sup>2</sup><em>k</
 <p>(9) <span
 class="math display"><em>ω</em> = <em>c</em><em>k</em></span></p>
 <p>Again, as shown previously,</p>
-<p>(10) <span class="math display">$$\begin{equation*}
+<p>(10) <span class="math display">\begin{equation*}
     \omega = 2\pi\nu, k = \frac{2\pi}{\lambda}
-\end{equation*}$$</span></p>
+\end{equation*}</span></p>
 <p>Substituting these two relations into (9);</p>
-<p>(11) <span class="math display">$$\begin{equation*}
+<p>(11) <span class="math display">\begin{equation*}
     2\pi\nu = c \left( \frac{2\pi}{\lambda} \right)
-\end{equation*}$$</span></p>
+\end{equation*}</span></p>
 <p>Dividing both sides by <span class="math inline">2<em>π</em></span>
 simplifies the equation to:</p>
-<p>(12) <span class="math display">$$\begin{equation*}
+<p>(12) <span class="math display">\begin{equation*}
     \nu = \frac{c}{\lambda}
-\end{equation*}$$</span></p>
+\end{equation*}</span></p>
 <p>Multiplying both sides by <span class="math inline"><em>λ</em></span>
 gives the final relationship:</p>
 <p>(13) <span
@@ -318,9 +335,9 @@ an electromagnetic wave. The frequency <span
 class="math inline"><em>ν</em></span> and wavelength <span
 class="math inline"><em>λ</em></span> of an electromagnetic wave
 traveling through vacuum are related by</p>
-<p>(14) <span class="math display">$$\begin{align*}
+<p>(14) <span class="math display">\begin{align*}
     \lambda \nu &amp;= c
-\end{align*}$$</span></p>
+\end{align*}</span></p>
 <p>where <span class="math inline"><em>c</em> = 3.0 × 10<sup>8</sup>
 m/s</span> is the speed of light in vacuum. While human vision is
 sensitive to frequencies between <span
@@ -350,9 +367,9 @@ class="math inline"><em>ν</em></span></p>
 <p><strong>Wien’s Displacement Law:</strong> The wavelength at which a
 blackbody radiates maximum intensity is inversely proportional to its
 absolute temperature. The law is expressed mathematically as:</p>
-<p>(15) <span class="math display">$$\begin{align*}
+<p>(15) <span class="math display">\begin{align*}
     \lambda _{max}=\frac{b}{T}\
-\end{align*}$$</span></p>
+\end{align*}</span></p>
 <p>Wien’s constant, b = 2.9 × 10<sup>−3</sup> mK</p>
 <p><strong>Stefan’s Law:</strong> The total thermal radiation power
 emitted by an object is directly proportional to its surface area and
